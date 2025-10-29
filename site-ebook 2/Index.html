@@ -1,0 +1,912 @@
+<!-- Forçar novo deploy: ajuste de comentário -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Otimização para Dispositivos Móveis -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0f0f1a">
+    
+    <!-- Otimização para Safari -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Finanças em Casa">
+    
+    <!-- Otimização para Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Finanças em Casa">
+    
+    <!-- Otimização para Windows -->
+    <meta name="msapplication-TileColor" content="#1a1a1a">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Segurança e Proteção -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.financasemcasa.com.br https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://www.financasemcasa.com.br https: data:; style-src 'self' https://www.financasemcasa.com.br https: 'unsafe-inline'; script-src 'self' https://www.financasemcasa.com.br https: 'unsafe-inline' 'unsafe-eval';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Verificação de Segurança -->
+    <meta name="google-site-verification" content="seu-codigo-de-verificacao">
+    <meta name="msvalidate.01" content="seu-codigo-de-verificacao-bing">
+    <meta name="yandex-verification" content="seu-codigo-de-verificacao-yandex">
+    
+    <!-- Informações do Site -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="Aprenda a administrar seu dinheiro e ganhar mais sem sair de casa. Ebook completo com estratégias práticas para suas finanças.">
+    <meta name="keywords" content="finanças, dinheiro, investimentos, renda extra, economia, finanças pessoais">
+    <meta name="author" content="Finanças em Casa">
+    <meta name="copyright" content="© 2024 Finanças em Casa">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.financasemcasa.com.br/">
+    <meta property="og:title" content="Finanças em Casa - Transforme Suas Finanças">
+    <meta property="og:description" content="Aprenda a administrar seu dinheiro e ganhar mais sem sair de casa.">
+    <meta property="og:image" content="https://www.financasemcasa.com.br/images/og-image.jpg">
+    <meta property="og:site_name" content="Finanças em Casa">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.financasemcasa.com.br/">
+    <meta name="twitter:title" content="Finanças em Casa">
+    <meta name="twitter:description" content="Aprenda a administrar seu dinheiro e ganhar mais sem sair de casa.">
+    <meta name="twitter:image" content="https://www.financasemcasa.com.br/images/twitter-image.jpg">
+    
+    <!-- Favicon e Ícones -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.financasemcasa.com.br/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.financasemcasa.com.br/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.financasemcasa.com.br/apple-touch-icon.png">
+    <link rel="manifest" href="https://www.financasemcasa.com.br/manifest.json">
+    
+    <!-- Fontes e Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1002779502043688');
+    fbq('track', 'PageView');
+
+    // Eventos de engajamento
+    document.addEventListener('DOMContentLoaded', function() {
+        // Rastrear tempo de permanência
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            let timeSpent = Math.round((Date.now() - startTime) / 1000);
+            fbq('track', 'ViewContent', {
+                content_name: 'Tempo na Página',
+                content_category: 'Engajamento',
+                value: timeSpent
+            });
+        });
+
+        // Rastrear scroll até o final
+        let hasScrolledToBottom = false;
+        window.addEventListener('scroll', function() {
+            if (!hasScrolledToBottom && (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                hasScrolledToBottom = true;
+                fbq('track', 'ViewContent', {
+                    content_name: 'Scroll Completo',
+                    content_category: 'Engajamento'
+                });
+            }
+        });
+
+        // Rastrear visualização de benefícios
+        const benefitsSection = document.querySelector('#benefits');
+        if (benefitsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        fbq('track', 'ViewContent', {
+                            content_name: 'Benefícios do Ebook',
+                            content_category: 'Engajamento'
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            observer.observe(benefitsSection);
+        }
+
+        // Rastrear visualização de depoimentos
+        const testimonialsSection = document.querySelector('#testimonials');
+        if (testimonialsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        fbq('track', 'ViewContent', {
+                            content_name: 'Depoimentos',
+                            content_category: 'Social Proof'
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            observer.observe(testimonialsSection);
+        }
+
+        // Rastrear cliques em links de FAQ
+        const faqLinks = document.querySelectorAll('.faq-question');
+        faqLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                fbq('track', 'ViewContent', {
+                    content_name: this.querySelector('span').textContent,
+                    content_category: 'FAQ'
+                });
+            });
+        });
+
+        // Rastrear cliques em links de garantia e termos
+        const guaranteeLinks = document.querySelectorAll('#guarantee-link, #terms-link, #privacy-link');
+        guaranteeLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                fbq('track', 'ViewContent', {
+                    content_name: this.textContent,
+                    content_category: 'Informações Legais'
+                });
+            });
+        });
+
+        // Rastrear AddToCart nos botões de compra
+        const buyButtons = document.querySelectorAll('.cta-button, .secondary-button');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const value = this.getAttribute('data-checkout') === 'combo' ? 46.98 : 26.99;
+                fbq('track', 'AddToCart', {
+                    content_name: this.textContent.trim(),
+                    value: value,
+                    currency: 'BRL'
+                });
+            });
+        });
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1002779502043688&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <title>Finanças em Casa - Transforme Suas Finanças</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Finanças em Casa</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <button class="menu-close" aria-label="Fechar Menu"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#guarantee">Garantia</a></li>
+                    <li><a href="#buy">Comprar</a></li>
+                    <li><a href="#terms">Termos</a></li>
+                    <li><a href="#privacy">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Transforme Suas Finanças e Conquiste Sua Liberdade Sem Sair de Casa!</h1>
+                <p>Descubra o passo a passo para administrar seu dinheiro, eliminar dívidas, fazer renda extra e investir de forma inteligente — mesmo começando do zero.</p>
+                
+                <div class="price">
+                    <span class="current-price" style="--delay: 0.5s">R$26,99</span>
+                    <span class="old-price" style="--delay: 0.7s">R$47,00</span>
+                </div>
+                
+                <a href="https://suporte-rafael.mycartpanda.com/checkout/200986715:1" 
+                   class="cta-button" 
+                   data-checkout="main"
+                   data-secure="true"
+                   rel="noopener noreferrer"
+                   onclick="fbq('track', 'InitiateCheckout', {value: 26.99, currency: 'BRL'}); return verifyCheckoutLink(this)">
+                   Quero Começar Agora
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mesa de trabalho com laptop, calculadora e documentos financeiros" class="ebook-cover">
+            </div>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Site Seguro</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Pagamento Seguro</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Diversas Formas de Pagamento</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-headset"></i>
+                    <span>Suporte 24/7</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-medal"></i>
+                    <span>Garantia de 7 Dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upsell Section -->
+    <section class="upsell">
+        <h2 class="upsell-title" style="--delay: 0.3s">OFERTA ESPECIAL: POTENCIALIZE SEUS INVESTIMENTOS!</h2>
+        
+        <div class="upsell-product" style="--delay: 0.5s">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Guia de Investimento Pessoal" class="upsell-image">
+            <div class="upsell-info">
+                <h3>Como Investir R$100 por Mês e Construir Riqueza</h3>
+                <div class="upsell-price" style="--delay: 0.7s">R$19,99</div>
+                <p>Aprenda a fazer seu dinheiro trabalhar para você, começando com pequenos valores!</p>
+            </div>
+        </div>
+        
+        <div class="upsell-benefits" style="--delay: 0.9s">
+            <h4>Você vai dominar:</h4>
+            <ul>
+                <li>Como organizar suas finanças para investir todo mês</li>
+                <li>Métodos comprovados para poupar mesmo com orçamento apertado</li>
+                <li>O poder dos juros compostos na construção de riqueza</li>
+                <li>Onde alocar seu dinheiro de acordo com seus objetivos</li>
+                <li>Como aumentar gradualmente seus investimentos</li>
+            </ul>
+        </div>
+        
+        <div class="combo-price" style="--delay: 1.1s">Pacote Completo: <span>R$46,98</span> (R$26,99 + R$19,99)</div>
+        
+        <div class="upsell-buttons">
+            <a href="https://suporte-rafael.mycartpanda.com/checkout/200998019:1" 
+               class="cta-button" 
+               data-checkout="combo"
+               data-secure="true"
+               rel="noopener noreferrer"
+               onclick="fbq('track', 'InitiateCheckout', {value: 46.98, currency: 'BRL'}); return verifyCheckoutLink(this)">
+               Quero o Combo Completo
+            </a>
+            <a href="https://suporte-rafael.mycartpanda.com/checkout/200986715:1" 
+               class="secondary-button"
+               onclick="fbq('track', 'InitiateCheckout', {value: 26.99, currency: 'BRL'});">
+               PREFIRO APENAS O EBOOK PRINCIPAL
+            </a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <h2 class="section-title">O Que Você Vai Aprender</h2>
+        <div class="benefits-container">
+            <div class="benefit-card" style="--delay: 1">
+                <div class="benefit-icon">
+                    <i class="fas fa-search-dollar"></i>
+                </div>
+                <h3>Diagnóstico Financeiro</h3>
+                <p>Aprenda a fazer uma análise completa da sua situação financeira atual.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como faço para analisar minha situação financeira?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No ebook, você encontrará um método passo a passo exclusivo para fazer um diagnóstico completo da sua situação financeira. Aprenderá a:</p>
+                            <ul>
+                                <li>Criar um inventário detalhado de todos seus ativos e passivos</li>
+                                <li>Identificar padrões de gastos que estão impactando seu orçamento</li>
+                                <li>Calcular seu patrimônio líquido atual</li>
+                                <li>Estabelecer metas financeiras realistas</li>
+                            </ul>
+                            <p>Com nossas planilhas exclusivas e exemplos práticos, você conseguirá ter uma visão clara e objetiva da sua situação financeira em menos de 1 hora!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card" style="--delay: 2">
+                <div class="benefit-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Orçamento Inteligente</h3>
+                <p>Domine a regra 50/30/20 para controlar seus gastos de forma eficiente.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como funciona a regra 50/30/20?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nossa metodologia exclusiva vai muito além da regra básica 50/30/20. No ebook, você descobrirá:</p>
+                            <ul>
+                                <li>Como adaptar a regra para sua realidade financeira</li>
+                                <li>Técnicas avançadas de categorização de gastos</li>
+                                <li>Fórmulas para calcular seus percentuais ideais</li>
+                                <li>Estratégias para reduzir gastos em cada categoria</li>
+                            </ul>
+                            <p>Com nossas planilhas personalizadas, você conseguirá implementar um orçamento eficiente em apenas uma semana!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>E se minha renda não for suficiente?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Este é um dos capítulos mais valiosos do ebook! Você aprenderá:</p>
+                            <ul>
+                                <li>5 estratégias comprovadas para aumentar sua renda</li>
+                                <li>Como identificar oportunidades de renda extra</li>
+                                <li>Técnicas para negociar aumentos salariais</li>
+                                <li>Métodos para monetizar habilidades que você já tem</li>
+                            </ul>
+                            <p>Nossos leitores já conseguiram aumentar sua renda em até 30% aplicando estas técnicas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card" style="--delay: 3">
+                <div class="benefit-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3>Eliminação de Dívidas</h3>
+                <p>Métodos comprovados para sair do vermelho de maneira organizada.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Qual método é melhor para quitar dívidas?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No ebook, você terá acesso a um sistema completo de eliminação de dívidas que inclui:</p>
+                            <ul>
+                                <li>Análise personalizada do seu perfil de endividamento</li>
+                                <li>Comparativo detalhado entre os métodos bola de neve e avalanche</li>
+                                <li>Planilhas exclusivas para acompanhamento do progresso</li>
+                                <li>Estratégias para evitar novas dívidas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como negociar com credores?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Este capítulo é um verdadeiro guia de negociação que inclui:</p>
+                            <ul>
+                                <li>Modelos prontos de propostas de negociação</li>
+                                <li>Técnicas de persuasão para reduzir juros</li>
+                                <li>Estratégias para parcelar dívidas sem comprometer o orçamento</li>
+                                <li>Dicas para lidar com cobranças e ligações indesejadas</li>
+                            </ul>
+                            <p>Com nossas técnicas, você pode conseguir descontos de até 90% no valor das dívidas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card" style="--delay: 4">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Renda Extra</h3>
+                <p>Descubra como gerar renda adicional usando suas habilidades existentes.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quais opções de renda extra o ebook cobre?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Desde freelancing, vendas online, até monetização de hobbies e investimentos iniciais.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Preciso ter habilidades especiais?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Não! Mostramos como identificar e monetizar habilidades que você já tem, mesmo que não perceba.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card" style="--delay: 5">
+                <div class="benefit-icon">
+                    <i class="fas fa-piggy-bank"></i>
+                </div>
+                <h3>Investimentos Iniciais</h3>
+                <p>Comece a investir com segurança, mesmo com pouco dinheiro.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quanto preciso para começar a investir?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mostramos opções que permitem começar com menos de R$50 e como escalar a partir daí.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quais os investimentos mais seguros para iniciantes?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Explicamos sobre Tesouro Direto, CDBs, fundos de investimento conservadores e como diversificar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card" style="--delay: 6">
+                <div class="benefit-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Segurança Financeira</h3>
+                <p>Como construir e manter uma reserva de emergência sólida.</p>
+                
+                <div class="benefit-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quanto devo ter na reserva de emergência?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O ideal é 3-6 meses de despesas essenciais, mas ensinamos como chegar lá gradualmente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Onde guardar a reserva de emergência?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mostramos as melhores opções de aplicações com liquidez imediata e proteção do valor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">O Que Dizem Nossos Leitores</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card" style="--delay: 1">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Depois que segui as dicas do ebook, finalmente consegui sair das dívidas e começar a investir. Recomendo muito!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Mariana A." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Mariana A.</h4>
+                            <p>29 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" style="--delay: 2">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"As estratégias de renda extra foram transformadoras. Estou fazendo uma renda mensal sem sair de casa."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos M." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Carlos M.</h4>
+                            <p>34 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" style="--delay: 3">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Em 3 meses apliquei os ensinamentos e já consegui criar minha primeira reserva financeira. Valeu cada centavo!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patrícia R." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Patrícia R.</h4>
+                            <p>41 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="buy">
+        <div class="cta-content">
+            <h2>Pronto para Transformar Sua Vida Financeira?</h2>
+            <p>Adquira agora mesmo o ebook que já ajudou centenas de pessoas a organizarem suas finanças e conquistarem liberdade. Garantia de satisfação ou seu dinheiro de volta!</p>
+            
+            <div class="price" style="justify-content: center; margin-bottom: 2rem;">
+                <span class="current-price">R$26,99</span>
+                <span class="old-price">R$47,00</span>
+            </div>
+            
+            <a href="https://suporte-rafael.mycartpanda.com/checkout/200986715:1" 
+               class="cta-button" 
+               data-checkout="main"
+               data-secure="true"
+               rel="noopener noreferrer"
+               onclick="fbq('track', 'InitiateCheckout', {value: 26.99, currency: 'BRL'}); return verifyCheckoutLink(this)">
+               Quero Começar Agora
+            </a>
+            
+            <div class="guarantee-badge" style="justify-content: center; margin-top: 1.5rem;">
+                <i class="fas fa-shield-alt"></i>
+                <span>Garantia de 7 dias ou seu dinheiro de volta</span>
+            </div>
+            
+            <div class="guarantee-badge" style="justify-content: center; margin-top: 1rem;">
+                <i class="fas fa-lock"></i>
+                <span>Checkout seguro pela Kiwify - Pagamentos criptografados</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        
+        <div class="faq-item" style="--delay: 1">
+            <div class="faq-question">
+                <span>Como receberei o ebook após a compra?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link para download do ebook em formato PDF. O arquivo é compatível com qualquer dispositivo e pode ser lido mesmo offline.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item" style="--delay: 2">
+            <div class="faq-question">
+                <span>Qual é a política de reembolso?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Oferecemos uma garantia de satisfação de 7 dias. Para solicitar o reembolso:</p>
+                <ul>
+                    <li>Envie um e-mail para suporte@financasemcasa.com.br dentro do período de 7 dias</li>
+                    <li>Detalhe o motivo da sua insatisfação</li>
+                    <li>Nossa equipe analisará sua solicitação</li>
+                    <li>Se aprovada, o valor será devolvido no mesmo método de pagamento utilizado na compra</li>
+                </ul>
+                <p>O reembolso é avaliado caso a caso, considerando a qualidade do conteúdo, a aplicabilidade das informações e o atendimento às expectativas descritas na página de vendas.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item" style="--delay: 3">
+            <div class="faq-question">
+                <span>Quais são os métodos de pagamento aceitos?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Aceitamos todos os cartões de crédito e Pix através da plataforma segura da Kiwify.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item" style="--delay: 4">
+            <div class="faq-question">
+                <span>Preciso ter conhecimento prévio?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Não! O ebook foi desenvolvido para iniciantes e explica tudo passo a passo, desde os conceitos mais básicos.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item" style="--delay: 5">
+            <div class="faq-question">
+                <span>Posso acessar de qualquer dispositivo?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! O ebook em PDF pode ser lido em computadores, tablets e smartphones, além de poder ser impresso se preferir.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" style="--delay: 6">
+            <div class="faq-question">
+                <span>Como posso entrar em contato com o suporte?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Você pode entrar em contato conosco exclusivamente pelo e-mail suporte@financasemcasa.com.br. Nossa equipe está pronta para ajudar com:</p>
+                <ul>
+                    <li>Dúvidas sobre o conteúdo do ebook</li>
+                    <li>Problemas com o download do material</li>
+                    <li>Solicitações de reembolso</li>
+                    <li>Questões técnicas</li>
+                    <li>Sugestões e feedback</li>
+                </ul>
+                <p>Respondemos todas as mensagens em até 48 horas úteis, garantindo um atendimento rápido e eficiente para todos os nossos clientes. Nosso objetivo é proporcionar a melhor experiência possível e ajudar você a alcançar seus objetivos financeiros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia Section -->
+    <section class="guarantee-section" id="guarantee">
+        <h2 class="section-title">Nossa Garantia</h2>
+        
+        <div class="guarantee-container">
+            <div class="guarantee-card" style="--delay: 1">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Garantia de Satisfação</h3>
+                <p>Oferecemos uma garantia de satisfação de 7 dias. Caso o conteúdo não atenda às suas expectativas, você pode solicitar o reembolso através do nosso canal de suporte.</p>
+                
+                <div class="guarantee-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como funciona o processo de reembolso?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para solicitar o reembolso, envie um e-mail para suporte@financasemcasa.com.br dentro do período de 7 dias, detalhando o motivo da sua insatisfação. Nossa equipe analisará sua solicitação e, se aprovada, o valor será devolvido no mesmo método de pagamento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quais são os critérios para reembolso?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O reembolso é avaliado caso a caso, considerando a qualidade do conteúdo, a aplicabilidade das informações e o atendimento às expectativas descritas na página de vendas. Nossa equipe está comprometida em garantir sua satisfação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guarantee-card" style="--delay: 2">
+                <div class="guarantee-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Compra 100% Segura</h3>
+                <p>Todas as transações são processadas pela Kiwify, uma plataforma segura e confiável, com certificado SSL e criptografia de ponta a ponta.</p>
+                
+                <div class="guarantee-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Meus dados estão seguros?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Utilizamos a plataforma Kiwify para processar pagamentos, que é certificada e segue os mais altos padrões de segurança. Seus dados financeiros nunca são armazenados em nossos servidores.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quais métodos de pagamento são aceitos?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Aceitamos todos os cartões de crédito e Pix. Todos os pagamentos são processados de forma segura pela Kiwify.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guarantee-card" style="--delay: 3">
+                <div class="guarantee-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Suporte Premium</h3>
+                <p>Oferecemos suporte exclusivo para todos os clientes, com resposta em até 48 horas úteis.</p>
+                
+                <div class="guarantee-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como posso entrar em contato com o suporte?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Você pode nos contatar exclusivamente pelo e-mail suporte@financasemcasa.com.br. Nossa equipe está pronta para ajudar com qualquer dúvida sobre o conteúdo do ebook.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>O suporte é vitalício?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Todos os clientes têm direito a suporte vitalício. Estamos sempre disponíveis para ajudar com qualquer dúvida sobre o conteúdo do ebook.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section class="guarantee-section" id="terms">
+        <h2 class="section-title">Termos de Uso</h2>
+        <div class="guarantee-container terms-cards">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Aceitação dos Termos</h3>
+                <p>Ao adquirir o ebook "Finanças em Casa", você concorda com estes Termos de Uso e nossa Política de Privacidade. Se não concordar com estes termos, não deve utilizar nosso material.</p>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3>Licença de Uso</h3>
+                <p>Concedemos uma licença pessoal, não exclusiva, intransferível e limitada para uso do conteúdo do ebook para fins pessoais e não comerciais.</p>
+                <ul>
+                    <li>Reproduzir, distribuir ou vender o conteúdo total ou parcialmente</li>
+                    <li>Modificar ou criar obras derivadas com base no material</li>
+                    <li>Compartilhar seu acesso com terceiros</li>
+                </ul>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Garantia e Responsabilidade</h3>
+                <p>O conteúdo do ebook é fornecido "no estado em que se encontra". Embora tenhamos feito todos os esforços para garantir a qualidade e precisão das informações, não garantimos resultados específicos com a aplicação dos métodos descritos.</p>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3>Política de Reembolso</h3>
+                <p>Oferecemos uma garantia de satisfação de 7 dias. Se não estiver satisfeito com o produto, envie um e-mail para suporte@financasemcasa.com.br dentro desse período para solicitar o reembolso integral.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section class="guarantee-section" id="privacy">
+        <h2 class="section-title">Política de Privacidade</h2>
+        <div class="guarantee-container privacy-cards">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Informações Coletadas</h3>
+                <p>Coletamos informações quando você realiza uma compra em nosso site, incluindo:</p>
+                <ul>
+                    <li>Nome completo</li>
+                    <li>Endereço de e-mail</li>
+                    <li>Informações de pagamento (processadas pela Kiwify)</li>
+                    <li>Dados de acesso (IP, navegador, dispositivo)</li>
+                </ul>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Uso das Informações</h3>
+                <p>Utilizamos suas informações para:</p>
+                <ul>
+                    <li>Processar sua compra e entregar o produto</li>
+                    <li>Enviar comunicações sobre sua conta/compra</li>
+                    <li>Melhorar nossos produtos e serviços</li>
+                    <li>Enviar e-mails promocionais (quando autorizado)</li>
+                </ul>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Proteção de Dados</h3>
+                <p>Implementamos medidas de segurança para proteger suas informações:</p>
+                <ul>
+                    <li>Criptografia SSL em todo o site</li>
+                    <li>Armazenamento seguro em servidores protegidos</li>
+                    <li>Acesso restrito a pessoal autorizado</li>
+                </ul>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Compartilhamento com Terceiros</h3>
+                <p>Não vendemos ou alugamos suas informações pessoais. Compartilhamos dados apenas com:</p>
+                <ul>
+                    <li>Processadores de pagamento (Kiwify)</li>
+                    <li>Provedores de serviços essenciais</li>
+                    <li>Quando exigido por lei</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="logo">Finanças em Casa</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#guarantee">Garantia</a></li>
+                    <li><a href="#buy">Comprar</a></li>
+                    <li><a href="#terms">Termos</a></li>
+                    <li><a href="#privacy">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-copy">
+            © 2024 Finanças em Casa. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <i class="fas fa-cookie-bite cookie-icon"></i>
+            <div class="cookie-text">
+                <h3>Política de Cookies</h3>
+                <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa política de cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-accept" id="acceptCookies">Aceitar</button>
+                <button class="cookie-decline" id="declineCookies">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
